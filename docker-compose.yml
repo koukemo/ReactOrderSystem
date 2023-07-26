@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./reactApp:/usr/src/app
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    stdin_open: true
+    tty: true
+
+  server:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    container_name: server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/usr/src/app
+    tty: true
+    stdin_open: true
+
+  db:
+    build:
+      context: ./db
+      dockerfile: Dockerfile
+    container_name: db
+    environment:
+      - SQLITE_DATABASE=db/mydatabase.db

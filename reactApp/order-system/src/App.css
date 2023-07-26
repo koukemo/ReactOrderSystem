@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-size: inherit;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.green-tea {
+  background-color: green;
+}
+
+.oolong-tea {
+  background-color: #4caf50;
+}
+
+.water {
+  background-color: #2196f3;
+}
+
+.coffee {
+  background-color: #795548;
+}
+
+.hojicha-tea {
+  background-color: #8bc34a;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.dialog-message {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 16px;
+}
+
+.close-button {
+  font-size: inherit;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  background-color: #2196f3;
+}
